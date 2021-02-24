@@ -9,6 +9,7 @@ categories:
 ### Naive Approach
 The naive answer here, is that the maximum amount of moves would be if the players continued to “step” over each other for the entire game. At that pace, the number of moves in a game would be ceil(n/2+1) for the player and floor(n/2+1) for the opponent where n is the board length. This of course presupposes the collusion of the player (or at minimum lack of a viable strategy on behalf of the opponent).
 
+```
 Move 1
 A - B - X - X - X - X - X
 Move 2
@@ -19,6 +20,7 @@ Move 4
 X - X - X - X - X - X - A
 Move 5
 X - X - X - X - X - X - X
+```
 
 Assuming a board of length 7 it takes the player 5 turns to reach an end state and the opponent 4 turns to reach an end state
 
